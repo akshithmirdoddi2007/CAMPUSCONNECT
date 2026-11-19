@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Events | CampusConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar">
+        <div class="logo">CampusConnect</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore Events</a>
+            <a href="registration.html">My Registrations</a>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- EXPLORE HERO SECTION -->
+
+    <section class="explore-hero">
+
+        <div class="explore-heading">
+            <span class="tag">DISCOVER YOUR NEXT EXPERIENCE</span>
+
+            <h1>Explore Campus Events</h1>
+
+            <p>
+                Find exciting events, learn new skills and connect
+                with talented students across your campus.
+            </p>
+        </div>
+
+        <!-- SEARCH BAR -->
+
+        <div class="search-container">
+            <input
+                type="text"
+                id="eventSearch"
+                placeholder="Search events..."
+            >
+
+            <button class="search-btn">Search</button>
+        </div>
+
+    </section>
+
+    <!-- EVENT CATEGORIES -->
+
+    <section class="explore-events">
+
+        <div class="section-heading">
+            <h2>Browse Categories</h2>
+            <p>Choose your favourite category and discover events.</p>
+        </div>
+
+        <div class="category-container">
+
+            <button class="category-btn">All Events</button>
+            <button class="category-btn">Artificial Intelligence</button>
+            <button class="category-btn">Robotics</button>
+            <button class="category-btn">Open Source</button>
+            <button class="category-btn">Technology</button>
+
+        </div>
+
+        <!-- EVENT LIST -->
+
+        <div class="section-heading">
+            <h2>Upcoming Events</h2>
+            <p>Discover what's happening on your campus.</p>
+        </div>
+
+        <div class="events-container">
+
+            <!-- EVENT 1 -->
+
+            <div class="event-card">
+                <div class="event-image hackathon">
+                    <span>ARTIFICIAL INTELLIGENCE</span>
+                </div>
+
+                <div class="event-details">
+                    <p class="event-date">25 NOVEMBER 2026</p>
+                    <h3>AI Build Night</h3>
+                    <p>Build innovative AI projects and explore the future of artificial intelligence.</p>
+                    <a href="registration.html?event=AI%20Build%20Night">
+    Register Now
+</a>
+                </div>
+            </div>
+
+            <!-- EVENT 2 -->
+
+            <div class="event-card">
+                <div class="event-image cultural">
+                    <span>ROBOTICS</span>
+                </div>
+
+                <div class="event-details">
+                    <p class="event-date">28 NOVEMBER 2026</p>
+                    <h3>Robotics Sprint</h3>
+                    <p>Design, build and test exciting robots with your team.</p>
+                    <a href="registration.html?event=Robotics%20Sprint"> Register Now</a>
+                </div>
+            </div>
+
+            <!-- EVENT 3 -->
+
+            <div class="event-card">
+                <div class="event-image workshop">
+                    <span>OPEN SOURCE</span>
+                </div>
+
+                <div class="event-details">
+                    <p class="event-date">02 DECEMBER 2026</p>
+                    <h3>Open Source Jam</h3>
+                    <p>Collaborate with developers and contribute to open-source projects.</p>
+                    <a href="registration.html?event=Open%20Source%20Jam"></a>Register Now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

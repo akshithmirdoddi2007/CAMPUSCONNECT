@@ -1,0 +1,470 @@
+/* CAMPUSCONNECT - WEBSITE DESIGN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8faff;
+    color: #172554;
+}
+
+/* NAVIGATION BAR */
+
+.navbar {
+    width: 100%;
+    height: 85px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #4338ca;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #4338ca;
+}
+
+/* NAVIGATION BUTTONS */
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.login-btn {
+    padding: 11px 22px;
+    border: 1px solid #4338ca;
+    background: white;
+    color: #4338ca;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.signup-btn {
+    padding: 11px 22px;
+    background: #4338ca;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background: linear-gradient(
+        120deg,
+        #eef2ff,
+        #e0e7ff,
+        #f5f3ff
+    );
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #ddd6fe;
+    color: #4338ca;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 62px;
+    line-height: 1.15;
+    margin: 25px 0;
+    color: #172554;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #64748b;
+    max-width: 580px;
+    margin-bottom: 35px;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 16px 30px;
+    background: #4338ca;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #312e81;
+    transform: translateY(-3px);
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 70px 7%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+/* FEATURED EVENTS SECTION */
+
+.featured-events {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    color: #172554;
+    margin: 20px 0 12px;
+}
+
+.section-heading p {
+    color: #64748b;
+    font-size: 17px;
+}
+
+/* EVENTS GRID */
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* EVENT CARD */
+
+.event-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border: 1px solid #e5e7eb;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(67,56,202,0.15);
+}
+
+/* EVENT IMAGE AREAS */
+
+.event-image {
+    height: 210px;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.event-image span {
+    background: white;
+    color: #4338ca;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hackathon {
+    background: linear-gradient(135deg, #312e81, #6366f1);
+}
+
+.cultural {
+    background: linear-gradient(135deg, #be185d, #f472b6);
+}
+
+.workshop {
+    background: linear-gradient(135deg, #047857, #34d399);
+}
+
+/* EVENT DETAILS */
+
+.event-details {
+    padding: 25px;
+}
+
+.event-date {
+    color: #6366f1;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.event-details h3 {
+    font-size: 21px;
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.event-details p:not(.event-date) {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.register-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #4338ca;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.register-btn:hover {
+    color: #312e81;
+}
+
+/* RESPONSIVE EVENTS GRID */
+
+@media (max-width: 900px) {
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+}
+/* EXPLORE EVENTS PAGE */
+
+.explore-hero {
+    padding: 90px 10%;
+    background: linear-gradient(135deg, #eef0ff, #e4e9ff);
+    text-align: center;
+}
+
+.explore-heading h1 {
+    font-size: 48px;
+    color: #192653;
+    margin: 25px 0;
+}
+
+.explore-heading p {
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.search-btn {
+    padding: 16px 28px;
+    background: #4338ca;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.explore-events {
+    padding: 70px 10%;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0 60px;
+}
+
+.category-btn {
+    padding: 12px 22px;
+    border: 1px solid #4338ca;
+    border-radius: 25px;
+    background: white;
+    color: #4338ca;
+    cursor: pointer;
+}
+
+.category-btn:hover {
+    background: #4338ca;
+    color: white;
+}
+
+.search-btn:hover {
+    background: #312e81;
+}
+
+@media (max-width: 600px) {
+    .explore-hero {
+        padding: 60px 5%;
+    }
+
+    .explore-heading h1 {
+        font-size: 34px;
+    }
+
+    .explore-events {
+        padding: 45px 5%;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+}
+/* REGISTRATION PAGE */
+
+.registration-section {
+    padding: 80px 10%;
+    background: #f5f7ff;
+    min-height: 80vh;
+}
+
+.registration-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.2);
+}
+
+#registrationForm .register-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#registrationForm .register-btn:hover {
+    background: #574bdb;
+    transform: translateY(-2px);
+}
+/* Registration Success Message */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}

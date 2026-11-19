@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration | CampusConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar">
+        <div class="logo">CampusConnect</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore Events</a>
+            <a href="registration.html">My Registrations</a>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- REGISTRATION SECTION -->
+
+    <section class="registration-section">
+
+        <div class="section-heading">
+            <h2>Event Registration</h2>
+            <p>Register for your favourite campus event.</p>
+        </div>
+
+        <div class="registration-container">
+
+            <form id="registrationForm">
+
+                <div class="form-group">
+                    <label for="studentName">Full Name</label>
+                    <input type="text" id="studentName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentEmail">Email Address</label>
+                    <input type="email" id="studentEmail" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentPhone">Phone Number</label>
+                    <input type="tel" id="studentPhone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentCollege">College Name</label>
+                    <input type="text" id="studentCollege" placeholder="Enter your college name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventName">Select Event</label>
+
+                    <select id="eventName" required>
+                        <option value="">Choose an event</option>
+                        <option value="AI Build Night">AI Build Night</option>
+                        <option value="Robotics Sprint">Robotics Sprint</option>
+                        <option value="Open Source Jam">Open Source Jam</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentDepartment">Department</label>
+                    <input type="text" id="studentDepartment" placeholder="Enter your department" required>
+                </div>
+                <div id="successMessage" class="success-message" style="display: none;">
+    🎉 Registration submitted successfully!
+    We look forward to seeing you at the event.
+</div>
+
+                <button type="submit" class="register-btn">
+                    Submit Registration
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
